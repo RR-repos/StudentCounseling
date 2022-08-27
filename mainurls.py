@@ -22,8 +22,8 @@ def questions():
 
 
 @app.route('/report/<int:acad>/<int:adj>/<int:social>/<int:fam>/<int:health>')
-def generateReport(acad:int,adj:int,social:int,fam:int,health:int):
-    return render_template('ques.html')
+def generateReport( acad :int, adj :int, social :int ,fam :int, health :int ):
+    return render_template('report.html')
 
 @app.route('/profile')
 def profile():
