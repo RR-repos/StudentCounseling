@@ -10,9 +10,10 @@ In the current era, students are facing a lot of pressure to compete in the rapi
  4. For html pages layout, color codes, check out: https://docs.google.com/document/d/1LUvH8ncho23QdmWWogS3uncX7fx9y5kiPNXvHARmyq8/edit?usp=sharing
  5. I have added comments in the python files, telling the requirements, don't erase them.
  6. DO NOT change anything in any other file other than your assigned work file. Not following so will lead to merge conflicts.
- 7. Commit the changes regularly.
- 8. All your commit messages must be descriptive- 5 words atleast, should understand and know all the changes with the commit, from the comment itself. Also write a description to explain the commit in detail if 5 words are not enough.
- 9. We will have a review session on thursday.
+ 7. Do Not create any new files, all the needed files have already been created.
+ 8. Commit the changes regularly.
+ 9. All your commit messages must be descriptive- 5 words atleast, should understand and know all the changes with the commit, from the comment itself. Also write a description to explain the commit in detail if 5 words are not enough.
+ 10. We will have a review session on thursday(1/9/22).
  
 
 
