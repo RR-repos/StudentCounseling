@@ -8,8 +8,10 @@ Instructions to follow while coding:
  2. In the project page, I will assign each of you, your tasks. Please update your status regularly.
  3. Check out this link for all project details: https://drive.google.com/drive/folders/1XXPrp37u7_ImnlrbY6VeKnCSXXp2uz0S?usp=sharing
  4. I have added comments in the python files, telling the requirements, don't erase them.
- 5. DO NOT change anything in any other file other than your assigned work file.
+ 5. DO NOT change anything in any other file other than your assigned work file. Not following so will lead to merge conflicts.
  6. Commit the changes regularly.
+ 7. All your commit messages must be descriptive- 5 words atleast, should understand and know all the changes with the commit, from the comment itself. Also write a description to explain the commit in detail if 5 words are not enough.
+ 8. We will have a review session on thursday, so do your work before that
  
 
 
