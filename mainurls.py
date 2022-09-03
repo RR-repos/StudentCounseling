@@ -1,9 +1,12 @@
 
 from flask import Flask, redirect, url_for, render_template, request,flash,session
 import sqlite3 as sql
+
 from flask_session import Session
 
 app=Flask(__name__)
+
+
 
 @app.route('/signup')
 def signup():
@@ -24,7 +27,7 @@ def questions():
 
 
 @app.route('/report/<int:acad>/<int:adj>/<int:social>/<int:fam>/<int:health>')
-def generateReport( acad :int, adj :int, social :int ,fam :int, health :int ):
+def generateReport( acad: int, adj: int, social: int, fam: int, health: int ):
     return render_template('report.html')
 
 @app.route('/profile')
@@ -35,6 +38,7 @@ def profile():
 def logout():
     session["userId"] = None
     return redirect("/")
+
 
 if __name__=='__main__':
     app.run(debug=True)
