@@ -1,0 +1,56 @@
+<html>
+   <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+ <!-- <link rel="stylesheet" href="barstyle.css"> -->
+ <style>
+  a:hover{
+ background-color:none;
+  text-decoration: none;
+cursor:pointer;
+}
+.backimg{
+  background: rgba(0,0,0,0.5)url("../project/background.jpeg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light; 
+  opacity: 0.9;
+  position: relative;
+  isolation:isolate;
+}
+.backimg::after{
+  content:'';
+  position: absolute;
+  z-index:-1;
+  inset:0;
+  background: white;
+  opacity:.5;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+ .logout{
+  color: black;
+} 
+/* .backimg::before{
+  content:"";
+  background-size:absolute;
+  
+   background-color:rgba(1, 1, 1, 0); 
+}  */
+ </style>
+ </head>
+ <body class="backimg">
+ <div class="logout col-md-6">
+<h3><a>Logo</a></h3>
+ </div>
+ <div class="logout col-md-6" style=" text-align:right">
+<h3><a>Logout</a></h3>
+</div>
+<img src="C:\sudhira\project\new_image.jpg" width="40%" height="70%">
+ </body>
+ </html>
