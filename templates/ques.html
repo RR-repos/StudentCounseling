@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+max-width: 100%;
+max-height:100%;
+text-align: center;
+
+}
+.box {
+  background-color: lightgrey;
+  width: 300px;
+  
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+word-wrap:break-word;
+font-size:20px;
+position:absolute;
+top: 8px;
+left:8px;
+width: 300px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+position:absolute;
+
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev
+{left:0;
+}
+/* Position the "next button" to the right */
+.next {
+  right:700px;
+  border-radius: 6px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align:left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.box {
+  background-color: #81D8D0;
+  width: 750px;
+height:700px;
+  border: 50px ;
+border-color: #00008B;
+  padding: 20px;
+word-wrap:break-word;
+font-size:15px;
+position:absolute;
+
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.bstyle {
+  width: 250px;
+  background-color:  #009698;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.bstyle:hover {
+  background-color: #c0c0c0 ;
+  color: white;
+}
+.option {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 225px;
+  left:80px;
+  width: 100%;
+  text-align:left;
+}
+
+	</style>
+</head>
+<body>
+
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box" ><p style="color: #6A5ACD;font-size:30px;">Set relevant goals</p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px;">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+  <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box" ><p style="color: #6A5ACD;font-size:30px;">Frame Proper Timetable </p>
+<p style="color: #6A5ACD;">---------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+  <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Memory Improvement Techniques </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Note taking skills </p>
+<p style="color: #6A5ACD;">--------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+  <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Attention/Concentration Improvement </p>
+<p style="color: #6A5ACD;">--------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Efficient Study Habits </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Increase Self-Motivation in studies </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">8/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Interest in Studies </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Career guidance </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Coping with Work Pressure (Stress/tension)</p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Managing Exam Stress</p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Improve Writing Skills </p>
+<p style="color: #6A5ACD;">----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Increase Work Commitment</p>
+<p style="color: #6A5ACD;">--------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">14 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Coping with Distractions while Studying </p>
+<p style="color: #6A5ACD;">---------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">15 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Problems due to Medium of Instruction </p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">16 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Understanding Subject Matter </p>
+<p style="color: #6A5ACD;">---------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">17 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Increase Self Confidence </p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">18/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Anger Management </p>
+<p style="color: #6A5ACD;">----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">19 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Improve Self Discipline </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">20 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Increase Self Control/patience </p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">21/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Gain Meaning in Life </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">22 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Enhance Decision Making Skills </p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">23 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Overcome Lethargy (laziness)</p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">24 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Enhance Communication Skills </p>
+<p style="color: #6A5ACD;">--------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">25 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Assertiveness - Ability to say ‘No’; </p>
+<p style="color: #6A5ACD;">----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">26 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Compassion – Ability to think about others</p>
+<p style="color: #6A5ACD;">---------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">27/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Respect – Self & Others</p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">28/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Conflict Management – resolving problems </p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">29 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Overcome Shyness</p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">30 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Overcome loneliness</p>
+<p style="color: #6A5ACD;">--------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">31 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Overcome Infatuations-a short-lived passion or admiration for something.</p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">32 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Overcome Peer (Friends) Pressure</p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">33 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px"> Coping with broken relationships/deaths</p>
+<p style="color: #6A5ACD;">------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">34 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Adjustment with Parents </p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">35 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Adjustment with siblings (Brothers & Sisters)</p>
+<p style="color: #6A5ACD;">----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+  <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">36/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Adjustment with other relatives </p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">37 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Overcome Homesickness </p>
+<p style="color: #6A5ACD;">--------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">38/ 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Coping with Family disputes </p>
+<p style="color: #6A5ACD;">-------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">39 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Lack of Family support </p>
+<p style="color: #6A5ACD;">---------------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">40 / 40</div>
+<img src="C:\Users\DELL\Documents\Downloads\image.jpeg" style="width:100%">
+<div class="box"><p style="color: #6A5ACD;font-size:30px">Financial Problems </p>
+<p style="color: #6A5ACD;">-----------------------------------------------------------------------------------------------------</p>
+<p style="color: white;font-size:20px">Read each of the following items and rate as per the intensity of your need for improvement on each item</p>
+ <div class="option"><form>
+    <input type="radio" id="1-Not needed" name="fav_language" value="1-Not needed">
+    <label for="1-Not needed" class="bstyle">1-Not needed</label><br>
+    <input type="radio" id="2-somewhat needed" name="fav_language" value="2-Somewhat needed">
+    <label for="2-somewhat needed" class="bstyle">2-Somewhat needed</label><br>
+    <input type="radio" id="3-most needed" name="fav_language" value="3-Most needed">
+    <label for="3-most needed" class="bstyle">3-Most needed</label>
+   </form></div></div></div>
+</div>
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	</body>
+
+</html>
