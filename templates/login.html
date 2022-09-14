@@ -11,6 +11,8 @@
             margin-right: 800px;
             
         }
+        
+        
         form{
             margin-top: 100px;
             margin-right:700px
@@ -60,27 +62,28 @@
   <body background="/static/Images/snl.jpeg">
     <br><br><br><br>
     <h1>LOGIN</h1>
-    <p>{{msg}}</p>   
+       
            
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-          {% for message in messages %}
-             {{ message }}
-          {% endfor %}
-       {% endif %}
-    {% endwith %}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              {% for message in messages %}
+                <h3> {{ message }} <h3>
+              {% endfor %}
+           {% endif %}
+        {% endwith %}
+   
     <div class="container">
       <div class="row justify-content-center">
           <div class="form-group align-center ">   
-            <form action='/home' method="post">
+            <form action='/logged' method="post">
                 <div class="form-group">
                   <label for="username"></label>
                   
-                  <input type="text" class="form-control" id="username" name="username" placeholder="Enter email address">
+                  <input type="text" class="form-control" id="username1" name="username1" placeholder="Enter email address">
                 </div>
                 <div class="form-group">
                   <label for="password"></label>
-                  <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                  <input type="password" class="form-control" id="i" name="password1" placeholder="Enter password">
                 </div>  
                 <div class="container">
                     <div class="col-md-10 text-center">      
