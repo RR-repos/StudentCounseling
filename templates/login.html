@@ -22,7 +22,7 @@
             width : 500px; 
 
         }
-        input[type=text] {
+        input[type=email] {
             width: 90%;
             padding: 20px 20px;
             margin: 25px 0;
@@ -62,6 +62,7 @@
   <body background="/static/Images/snl.jpeg">
     <br><br><br><br>
     <h1>LOGIN</h1>
+    <p>{{msg}}<p>
        
            
         {% with messages = get_flashed_messages() %}
@@ -79,11 +80,17 @@
                 <div class="form-group">
                   <label for="username"></label>
                   
-                  <input type="text" class="form-control" id="username1" name="username1" placeholder="Enter email address">
+                  <input type="email" class="form-control" id="username1" name="username1" placeholder="Enter email address" required autofocus>
+                    <div class="invalid-feedback">
+                      Enter a valid email address.
+                    </div>
                 </div>
                 <div class="form-group">
                   <label for="password"></label>
-                  <input type="password" class="form-control" id="i" name="password1" placeholder="Enter password">
+                  <input type="password" class="form-control" id="password1" name="password1" placeholder="Enter password" required autofocus>
+                    <div class = "valid-feedback"> Valid data. </div>  
+                    <div class = "invalid-feedback"> Please fill the password </div>  
+                   
                 </div>  
                 <div class="container">
                     <div class="col-md-10 text-center">      
