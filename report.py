@@ -6,8 +6,14 @@ import matplotlib.pyplot as plt
  
   
 # creating the dataset
-data = {'academic':6, 'personality/adjustment':7, 'social':3,
-        'family':8,'clinical/health':9}
+nacad=int((7*10)/24)
+nadj=int((3*10)/18)
+nsocial=int((5*10)/10)
+nfam=int((9*10)/12)
+nhealth=int((1*10)/9)
+data = {'academic':nacad, 'personality/adjustment':nadj, 'social':nsocial,
+        'family':nfam,'clinical/health':nhealth} 
+
 courses = list(data.keys())
 values = list(data.values())
   
@@ -17,5 +23,5 @@ fig = plt.figure(figsize = (10, 5))
 plt.bar(courses, values, color ='lightgreen',
         width = 0.4)
  
-plt.savefig(r"C:\sudhira\project\new_image.jpg",bbox_inches='tight')
+plt.savefig(r"C:\sudhira\project\StudentCounseling\new_image.jpg",bbox_inches='tight')
 plt.show()
