@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
  
   
 # creating the dataset
-nacad=int((acad*10)/17)
-nadj=int((adj*10)/9)
-nsocial=int((social*10)/10)
-nfam=int((family*10)/7)
-nhealth=int((health*10)/9)
+nacad=((acad*100)/17)
+nadj=((adj*100)/9)
+nsocial=((social*100)/10)
+nfam=((family*100)/7)
+nhealth=((health*100)/9)
 data = {'academic':nacad, 'personality/adjustment':nadj, 'social':nsocial,
         'family':nfam,'clinical/health':nhealth} 
 
