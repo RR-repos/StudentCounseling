@@ -1,5 +1,5 @@
 import os
-import Flask
+
 from flask import Flask
 import flask_sqlalchemy
 from flask_sqlalchemy import SQLAlchemy
@@ -11,6 +11,5 @@ class questions(db.Model):
     qid = db.Column(db.Integer, primary_key=True)
     category =db.Column(db.String, nullable=False)
     question =db.Column(db.String, nullable=False)
-    def __repr__(self):
-        return f'{self.qid} belonging to {self.category} is {self.question}'
+    
     
