@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-right: 800px;
+            
+        }
+        form{
+            margin-top: 0px;
+            margin-right:700px
+        }
+        label { 
+            display: block; 
+            width : 30px; 
+
+        }
+        select {
+            width: 475px;
+            margin: 15px;
+            height: 40px;
+            margin-top: 10px;
+            line-height: 50px;
+            margin-top: 100px;
+            border: 3px solid #003B27;
+            border-radius: 7px;
+
+        }
+        input[type=email] {
+          width: 80%;
+          padding: 10px 10px;
+          margin-bottom: 4px;
+          box-sizing: border-box;
+          border: 3px solid #003B27;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          outline: none;
+      }
+       
+        input[type=text] {
+            width: 80%;
+            padding: 10px 10px;
+            margin-bottom: 4px;
+            box-sizing: border-box;
+            border: 3px solid #003B27;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+          
+        input[type=date] {
+            width: 80%;
+            padding: 10px 10px;
+            margin-top: 35px;
+            margin-bottom: 4px;
+            content: attr(placeholder);
+            box-sizing: border-box;
+            border: 3px solid #003B27;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            border-radius: 7px;
+            outline: none;
+        }
+        input[type="date"]:before {
+            color: black;
+            content: attr(placeholder) !important;
+            margin-right: 0.5em;
+            border-radius: 7px;
+        }
+        input[type="date"]:focus:before {
+            content: '' !important;
+            border-radius: 7px;
+          }
+
+        input[type="password"]{
+            border: 3px solid #003B27;
+            width: 80%;
+            box-sizing: border-box;
+            padding: 10px 10px;
+            -webkit-transition: 0.5s;
+            margin-bottom: 4px;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #003B27 !important;
+        }
+
+        .button {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .text-my-own-color {
+            color: #800080 !important; 
+            margin-left: 150px;
+            margin-bottom: 5px;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Sign up</title> 
+
+    
+  </head>
+  <body background="/static/Images/snl.jpeg">
+    <h1>SIGN UP</h1>
+    <p>{{msg}}</p>   
+           
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+             {{ message }}
+          {% endfor %}
+       {% endif %}
+    {% endwith %}
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="form-group align-center ">   
+            <form action='/signed' method="post">
+                <div class="form-group">
+                  <label for="Fullname"></label>
+                  <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter your Full Name">
+                </div>
+                <div class="form-group">
+                  <label for="username"></label>
+                  
+                  <input type="email" class="form-control" id="username" name="username" placeholder="Enter Email Address" required autofocus>
+                  <div class="invalid-feedback">
+                    Enter a valid email address.
+                  </div>
+                </div>  
+                <div class="form-group">
+                    <label for="tpassword"></label>
+                    <input type="password" class="form-control" id="tpassword" name="tpassword" placeholder="Enter a password" required autofocus>
+                      <div class = "valid-feedback"> Valid data. </div>  
+                      <div class = "invalid-feedback"> Please fill the password </div>  
+                </div>  
+                <div class="form-group">
+                    <label for="password"></label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Confirm password" required autofocus>
+                      <div class = "valid-feedback"> Valid data. </div>  
+                      <div class = "invalid-feedback"> Please fill the password </div>  
+                </div> 
+                <br>
+                
+                <select id="gender" name="gender">
+                    <option value ="gender">Select Gender</option>
+                    <option value ="male">Male</option>
+                    <option value ="female">Female</option>
+                    <option value ="other">Other</option>
+                </select>
+                 
+
+                <input type="date" id="dob" name="dob" placeholder="Enter date of birth :" onchange="this.className=(this.value!=''?'has-value':'')">
+                
+                <br><div class="form-group">
+                    <label for="class"></label>
+                    <input type="text" class="form-control" id="class" name="class" placeholder="Enter class">
+                  </div> 
+
+                <label for="Dept"></label>
+                <br><select id="Dept" name="Dept">
+                    <option value ="dept">Select Department</option>
+                    <option value ="CSE">CSE</option>
+                    <option value ="CSM">CSM</option>
+                    <option value ="IT">IT</option>
+                    <option value ="ECE">ECE</option>
+                    <option value ="EEE">EEE</option>
+                </select>
+
+                <br>
+
+                <br><div class="container">
+                    <div class="col-md-10 text-center">      
+                        <button type="submit" class="btn btn-outline-dark btn-lg px-5 py-2  text-center">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <a class ="text-my-own-color" href='/login'>Already a User? Log in here </a>
+          </div>
+        </div>
+      </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+    
+  </body>
+</html>
