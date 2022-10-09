@@ -12,8 +12,9 @@ from flask_session import Session
 app=Flask(__name__)
 app.secret_key = "stucons"
 app.config['SECRET_KEY']="stucons"
-app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///counselling.db'
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///qdata.db'
 db = SQLAlchemy(app)
+app.app_context().push()
 
 
 @app.route('/signup',methods=['POST','GET'])
