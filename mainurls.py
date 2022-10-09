@@ -3,12 +3,17 @@ from crypt import methods
 from tokenize import String
 from flask import Flask, redirect, url_for, render_template, request,flash,session
 import sqlite3 as sql
+import flask_sqlalchemy
+from flask_sqlalchemy import SQLAlchemy
 from user import *
 
 from flask_session import Session
 
 app=Flask(__name__)
 app.secret_key = "stucons"
+app.config['SECRET_KEY']="stucons"
+app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///counselling.db'
+db = SQLAlchemy(app)
 
 
 @app.route('/signup',methods=['POST','GET'])
