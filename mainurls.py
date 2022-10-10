@@ -36,7 +36,7 @@ def home():
     return render_template('home.html')
 
 @app.route('/questionnaire')
-def questions():
+def showQuest():
     quest=questions.query.all()
     return render_template('ques.html',quest=quest)
 
