@@ -3,7 +3,8 @@ import os
 from flask import Flask
 import flask_sqlalchemy
 from flask_sqlalchemy import SQLAlchemy
-from mainurls import db
+
+db = SQLAlchemy()
 
    
 class questions(db.Model):
