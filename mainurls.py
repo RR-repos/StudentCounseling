@@ -1,5 +1,4 @@
 
-from crypt import methods
 from tokenize import String
 from flask import Flask, redirect, url_for, render_template, request,flash,session
 import sqlite3 as sql
