@@ -5,7 +5,7 @@ import sqlite3 as sql
 import flask_sqlalchemy
 from flask_sqlalchemy import SQLAlchemy
 from user import *
-from models import *
+from models import questions
 
 from flask_session import Session
 
@@ -36,10 +36,17 @@ def loggedin():
 def home():
     return render_template('home.html')
 
+#@app.route('/questionnaire')
+#def showQuest():
+ #   questList=questions.query.all()
+  #   return render_template('ques.html',quest=quest)
+
 @app.route('/questionnaire')
 def showQuest():
-    quest=questions.query.all()
-    return render_template('ques.html',quest=quest)
+    questList=questions.query.all()
+    for quest in questList:
+        return render_template('ques.html',quest=quest)
+
 
 
 @app.route('/report/<int:acad>/<int:adj>/<int:social>/<int:fam>/<int:health>')
