@@ -4,7 +4,7 @@ import re
 
 
 from flask import Flask, redirect,  url_for, render_template, request,flash, session
-from mainurls import *
+#from mainurls import *
 import sqlite3 as sql
 
 #def checkuser():
