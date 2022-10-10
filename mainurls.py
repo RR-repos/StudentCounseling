@@ -6,7 +6,7 @@ import sqlite3 as sql
 import flask_sqlalchemy
 from flask_sqlalchemy import SQLAlchemy
 from user import *
-
+from models import *
 from flask_session import Session
 
 app=Flask(__name__)
