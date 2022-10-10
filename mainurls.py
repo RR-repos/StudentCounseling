@@ -38,7 +38,8 @@ def home():
 
 @app.route('/questionnaire')
 def questions():
-    return render_template('ques.html')
+    quest=questions.query.all()
+    return render_template('ques.html',quest=quest)
 
 
 @app.route('/report/<int:acad>/<int:adj>/<int:social>/<int:fam>/<int:health>')
