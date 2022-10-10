@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 from user import *
 from ques import*
 from flask_session import Session
+from models import questions
 
 app=Flask(__name__)
 app.secret_key = "stucons"
