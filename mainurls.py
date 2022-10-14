@@ -1,9 +1,9 @@
-
-from crypt import methods
 from tokenize import String
 from flask import Flask, redirect, url_for, render_template, request,flash,session
 import sqlite3 as sql
 from user import *
+from profile import *
+
 
 from flask_session import Session
 
@@ -40,9 +40,9 @@ def questions():
 def generateReport( acad: int, adj: int, social: int, fam: int, health: int ):
     return render_template('report.html')
 
-@app.route('/profile')
-def profile():
-    return render_template('profile.html')
+@app.route('/profile', methods=['GET'])
+def profView():
+    return profdata()
 
 @app.route('/logout')
 def logout():
