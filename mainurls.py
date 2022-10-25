@@ -2,10 +2,9 @@
 from tokenize import String
 from flask import Flask, redirect, url_for, render_template, request,flash,session
 import sqlite3 as sql
-import flask_sqlalchemy
-from flask_sqlalchemy import SQLAlchemy
+
 from user import *
-from models import questions
+
 
 from flask_session import Session
 
@@ -43,9 +42,7 @@ def home():
 
 @app.route('/questionnaire')
 def showQuest():
-    questList=questions.query.all()
-    for quest in questList:
-        return render_template('ques.html',quest=quest)
+    return render_template('ques.html')
 
 
 
@@ -61,6 +58,10 @@ def profile():
 def logout():
     session["userId"] = None
     return redirect("/")
+
+@app.route('/help',methods=['POST','GET'])
+def help():
+    return render_template('help.html')
 
 
 if __name__=='__main__':
