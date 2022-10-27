@@ -32,6 +32,10 @@ def loggedin():
 def home():
     return render_template('home.html')
 
+@app.route('/help')
+def help():
+    return render_template('help.html')
+
 @app.route('/questionnaire')
 def questions():
     return render_template('ques.html')

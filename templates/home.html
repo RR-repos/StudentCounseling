@@ -54,7 +54,7 @@
     </head>
     <body class="bg">
         
-        <div class="container">
+        <!-- <div class="container">
             <nav class="navbar navbar-dark" style="background-color: #003B27; " >
                 <div class="d-flex justify-content-between mx-auto">
                     <a class="navbar-brand" href="/home">Home</a>                     
@@ -67,14 +67,23 @@
                   </div>
                 </div>
               </nav>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-dark" style="background-color: #003B27;
+          <ul class="nav-list">
+              <li><a class="nav-link" href="/home"> HOME</a></li>
+          </ul>
+          <form align="right" name="form1" method="post" class="rightnav" >
+            <a class="rightnav" href="/logout">logout</a>
+          </form>
+      
+      </nav>
         <div class="container" style = "padding-left: 450px; padding-top: 500px;" >
           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-5" role="group" aria-label="First group">
               <a href='/questionnaire'type="button" class="btn" >Take Assesment</a>
             </div>
             <div class="btn-group" role="group" aria-label="Second group">
-              <a href='/login'type="button" class="btn">Get Help</a>
+              <a href='/help'type="button" class="btn">Get Help</a>
             </div>
             
         </div>  
