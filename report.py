@@ -22,6 +22,5 @@ def gen(acad, adj, social, fam, health):
     
     # creating the bar plot
     plt.bar(courses, values, color ='lightgreen',width = 0.4)
-    plt.show()
-    plt.savefig("/static/Images/bargraph.png")
+    plt.savefig("bargraph.png",bbox_inches='tight')
     return render_template('report.html')
