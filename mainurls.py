@@ -3,7 +3,8 @@ from flask import Flask, redirect, url_for, render_template, request,flash,sessi
 import sqlite3 as sql
 from user import *
 from profile import *
-
+from ques import *
+from report import *
 
 from flask_session import Session
 
@@ -35,10 +36,13 @@ def home():
 def questions():
     return render_template('ques.html')
 
+@app.route('/ques', methods=['POST'])
+def quesL():
+    return quesList()
 
-@app.route('/report/<int:acad>/<int:adj>/<int:social>/<int:fam>/<int:health>')
-def generateReport( acad: int, adj: int, social: int, fam: int, health: int ):
-    return render_template('report.html')
+@app.route('/report/<int:acad>/<int:adj>/<int:social>/<int:fam>/<int:health>', methods=['GET','POST'])
+def report(acad: int, adj: int, social: int, fam: int, health: int ):
+    return gen(acad,adj,social,fam,health)
 
 @app.route('/profile', methods=['GET'])
 def profView():

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Questionairre</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+        <style>
+            .bg{
+              background-image: url("/static/Images/quesBg.jpeg");
+              /* height:100%;
+              width: 70%; */
+              background-size:contain;
+              /* background-position:center; */
+              /* background-repeat:round; */
+              background-attachment: fixed;
+            }
+            /* .btn{
+              
+              color: #003B27; 
+              border-width: 5px;
+              background-color: white;
+              padding: 2px;
+              outline-color: #003B27;
+            }
+            .btn:hover{
+              color: white;
+              background-color: #003B27;
+            }
+            .btn:active{
+                color: white;
+                background-color: #003B27;
+            } */
+            
+        </style>
+    </head>
+    <body class="bg">
+        <h5 style="margin: 15px;">{{msg}}</h5>
+        <div class="box">
+            <div>
+                <h4 style="margin: 15px; color: white;">INSTRUCTIONS: Read each of the following items and rate ( √ ) as per the intensity of your need for improvement on each items using the following criteria</h4>
+            </div>
+            
+            <div class="form-check">
+                
+                <form name="myForm" action="/ques" method="post" onsubmit="">
+                    
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Set relevant Goals</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q1" id="q1b1" value="0">
+                            <label class="btn btn-outline-light" for="q1b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q1" id="q1b2" value="1">
+                            <label class="btn btn-outline-light" for="q1b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q1" id="q1b3" value ="2">
+                            <label class="btn btn-outline-light" for="q1b3">Most Needed</label>
+                          </div>
+                    </div>
+                    
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Frame proper Time table</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q2" id="q2b1" value="0">
+                            <label class="btn btn-outline-light" for="q2b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q2" id="q2b2" value="1">
+                            <label class="btn btn-outline-light" for="q2b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q2" id="q2b3" value ="2">
+                            <label class="btn btn-outline-light" for="q2b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Effective Learning Methods</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q3" id="q3b1" value="0">
+                            <label class="btn btn-outline-light" for="q3b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q3" id="q3b2" value="1">
+                            <label class="btn btn-outline-light" for="q3b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q3" id="q3b3" value ="2">
+                            <label class="btn btn-outline-light" for="q3b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Memory Improvement Techniques </h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q4" id="q4b1" value="0">
+                            <label class="btn btn-outline-light" for="q4b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q4" id="q4b2" value="1">
+                            <label class="btn btn-outline-light" for="q4b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q4" id="q4b3" value ="2">
+                            <label class="btn btn-outline-light" for="q4b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Attention/Concentration Improvement</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q5" id="q5b1" value="0">
+                            <label class="btn btn-outline-light" for="q5b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q5" id="q5b2" value="1">
+                            <label class="btn btn-outline-light" for="q5b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q5" id="q5b3" value ="2">
+                            <label class="btn btn-outline-light" for="q5b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Note Taking Skills</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q6" id="q6b1" value="0">
+                            <label class="btn btn-outline-light" for="q6b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q6" id="q6b2" value="1">
+                            <label class="btn btn-outline-light" for="q6b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q6" id="q6b3" value ="2">
+                            <label class="btn btn-outline-light" for="q6b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Efficient Study Habits</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q7" id="q7b1" value="0">
+                            <label class="btn btn-outline-light" for="q7b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q7" id="q7b2" value="1">
+                            <label class="btn btn-outline-light" for="q7b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q7" id="q7b3" value ="2">
+                            <label class="btn btn-outline-light" for="q7b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Increase Self-Motivation in studies</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q8" id="q8b1" value="0">
+                            <label class="btn btn-outline-light" for="q8b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q8" id="q8b2" value="1">
+                            <label class="btn btn-outline-light" for="q8b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q8" id="q8b3" value ="2">
+                            <label class="btn btn-outline-light" for="q8b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Interest in Studies</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q9" id="q9b1" value="0">
+                            <label class="btn btn-outline-light" for="q9b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q9" id="q9b2" value="1">
+                            <label class="btn btn-outline-light" for="q9b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q9" id="q9b3" value ="2">
+                            <label class="btn btn-outline-light" for="q9b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Career guidance</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q10" id="q10b1" value="0">
+                            <label class="btn btn-outline-light" for="q10b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q10" id="q10b2" value="1">
+                            <label class="btn btn-outline-light" for="q10b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q10" id="q10b3" value ="2">
+                            <label class="btn btn-outline-light" for="q10b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Coping with Work Pressure (Stress/tension)</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q11" id="q11b1" value="0">
+                            <label class="btn btn-outline-light" for="q11b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q11" id="q11b2" value="1">
+                            <label class="btn btn-outline-light" for="q11b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q11" id="q11b3" value ="2">
+                            <label class="btn btn-outline-light" for="q11b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Managing Exam Stress</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q12" id="q12b1" value="0">
+                            <label class="btn btn-outline-light" for="q12b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q12" id="q12b2" value="1">
+                            <label class="btn btn-outline-light" for="q12b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q12" id="q12b3" value ="2">
+                            <label class="btn btn-outline-light" for="q12b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Improve Writing Skills</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q13" id="q13b1" value="0">
+                            <label class="btn btn-outline-light" for="q13b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q13" id="q13b2" value="1">
+                            <label class="btn btn-outline-light" for="q13b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q13" id="q13b3" value ="2">
+                            <label class="btn btn-outline-light" for="q13b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Increase Work Commitment</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q14" id="q14b1" value="0">
+                            <label class="btn btn-outline-light" for="q14b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q14" id="q14b2" value="1">
+                            <label class="btn btn-outline-light" for="q14b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q14" id="q14b3" value ="2">
+                            <label class="btn btn-outline-light" for="q14b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Coping with Distractions while Studying</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q15" id="q15b1" value="0">
+                            <label class="btn btn-outline-light" for="q15b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q15" id="q15b2" value="1">
+                            <label class="btn btn-outline-light" for="q15b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q15" id="q15b3" value ="2">
+                            <label class="btn btn-outline-light" for="q15b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Problems due to Medium of Instruction</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q16" id="q16b1" value="0">
+                            <label class="btn btn-outline-light" for="q16b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q16" id="q16b2" value="1">
+                            <label class="btn btn-outline-light" for="q16b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q16" id="q16b3" value ="2">
+                            <label class="btn btn-outline-light" for="q16b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Understanding Subject Matter</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q17" id="q17b1" value="0">
+                            <label class="btn btn-outline-light" for="q17b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q17" id="q17b2" value="1">
+                            <label class="btn btn-outline-light" for="q17b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q17" id="q17b3" value ="2">
+                            <label class="btn btn-outline-light" for="q17b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome Fear of Failure</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q18" id="q18b1" value="0">
+                            <label class="btn btn-outline-light" for="q18b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q18" id="q18b2" value="1">
+                            <label class="btn btn-outline-light" for="q18b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q18" id="q18b3" value ="2">
+                            <label class="btn btn-outline-light" for="q18b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Increase Self Confidence</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q19" id="q19b1" value="0">
+                            <label class="btn btn-outline-light" for="q19b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q19" id="q19b2" value="1">
+                            <label class="btn btn-outline-light" for="q19b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q19" id="q19b3" value ="2">
+                            <label class="btn btn-outline-light" for="q19b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Anger Management</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q20" id="q20b1" value="0">
+                            <label class="btn btn-outline-light" for="q20b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q20" id="q20b2" value="1">
+                            <label class="btn btn-outline-light" for="q20b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q20" id="q20b3" value ="2">
+                            <label class="btn btn-outline-light" for="q20b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Improve Self Discipline</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q21" id="q21b1" value="0">
+                            <label class="btn btn-outline-light" for="q21b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q21" id="q21b2" value="1">
+                            <label class="btn btn-outline-light" for="q21b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q21" id="q21b3" value ="2">
+                            <label class="btn btn-outline-light" for="q21b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Increase Self Control/patience</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q22" id="q22b1" value="0">
+                            <label class="btn btn-outline-light" for="q22b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q22" id="q22b2" value="1">
+                            <label class="btn btn-outline-light" for="q22b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q22" id="q22b3" value ="2">
+                            <label class="btn btn-outline-light" for="q22b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Gain Meaning in Life</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q23" id="q23b1" value="0">
+                            <label class="btn btn-outline-light" for="q23b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q23" id="q23b2" value="1">
+                            <label class="btn btn-outline-light" for="q23b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q23" id="q23b3" value ="2">
+                            <label class="btn btn-outline-light" for="q23b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Enhance Decision Making Skills</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q24" id="q24b1" value="0">
+                            <label class="btn btn-outline-light" for="q24b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q24" id="q24b2" value="1">
+                            <label class="btn btn-outline-light" for="q24b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q24" id="q24b3" value ="2">
+                            <label class="btn btn-outline-light" for="q24b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome Lethargy (laziness)</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q25" id="q25b1" value="0">
+                            <label class="btn btn-outline-light" for="q25b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q25" id="q25b2" value="1">
+                            <label class="btn btn-outline-light" for="q25b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q25" id="q25b3" value ="2">
+                            <label class="btn btn-outline-light" for="q25b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Enhance Communication Skills</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q26" id="q26b1" value="0">
+                            <label class="btn btn-outline-light" for="q26b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q26" id="q26b2" value="1">
+                            <label class="btn btn-outline-light" for="q26b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q26" id="q26b3" value ="2">
+                            <label class="btn btn-outline-light" for="q26b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Assertiveness - Ability to say ‘No’</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q27" id="q27b1" value="0">
+                            <label class="btn btn-outline-light" for="q27b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q27" id="q27b2" value="1">
+                            <label class="btn btn-outline-light" for="q27b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q27" id="q27b3" value ="2">
+                            <label class="btn btn-outline-light" for="q27b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Compassion – Ability to think about others</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q28" id="q28b1" value="0">
+                            <label class="btn btn-outline-light" for="q28b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q28" id="q28b2" value="1">
+                            <label class="btn btn-outline-light" for="q28b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q28" id="q28b3" value ="2">
+                            <label class="btn btn-outline-light" for="q28b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Respect – Self & Others’</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q29" id="q29b1" value="0">
+                            <label class="btn btn-outline-light" for="q29b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q29" id="q29b2" value="1">
+                            <label class="btn btn-outline-light" for="q29b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q29" id="q29b3" value ="2">
+                            <label class="btn btn-outline-light" for="q29b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Conflict Management – resolving problems</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q30" id="q30b1" value="0">
+                            <label class="btn btn-outline-light" for="q30b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q30" id="q30b2" value="1">
+                            <label class="btn btn-outline-light" for="q30b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q30" id="q30b3" value ="2">
+                            <label class="btn btn-outline-light" for="q30b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome Shyness</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q31" id="q31b1" value="0">
+                            <label class="btn btn-outline-light" for="q31b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q31" id="q31b2" value="1">
+                            <label class="btn btn-outline-light" for="q31b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q31" id="q31b3" value ="2">
+                            <label class="btn btn-outline-light" for="q31b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome loneliness</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q32" id="q32b1" value="0">
+                            <label class="btn btn-outline-light" for="q32b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q32" id="q32b2" value="1">
+                            <label class="btn btn-outline-light" for="q32b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q32" id="q32b3" value ="2">
+                            <label class="btn btn-outline-light" for="q32b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome Infatuations - an intense but short-lived passion or admiration for someone or something.</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q33" id="q33b1" value="0">
+                            <label class="btn btn-outline-light" for="q33b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q33" id="q33b2" value="1">
+                            <label class="btn btn-outline-light" for="q33b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q33" id="q33b3" value ="2">
+                            <label class="btn btn-outline-light" for="q33b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome Peer (Friends) Pressure</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q34" id="q34b1" value="0">
+                            <label class="btn btn-outline-light" for="q34b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q34" id="q34b2" value="1">
+                            <label class="btn btn-outline-light" for="q34b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q34" id="q34b3" value ="2">
+                            <label class="btn btn-outline-light" for="q34b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Coping with broken relationships/deaths</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q35" id="q35b1" value="0">
+                            <label class="btn btn-outline-light" for="q35b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q35" id="q35b2" value="1">
+                            <label class="btn btn-outline-light" for="q35b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q35" id="q35b3" value ="2">
+                            <label class="btn btn-outline-light" for="q35b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Adjustment with Parents</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q36" id="q36b1" value="0">
+                            <label class="btn btn-outline-light" for="q36b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q36" id="q36b2" value="1">
+                            <label class="btn btn-outline-light" for="q36b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q36" id="q36b3" value ="2">
+                            <label class="btn btn-outline-light" for="q36b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Adjustment with siblings (Brothers & Sisters)</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q37" id="q37b1" value="0">
+                            <label class="btn btn-outline-light" for="q37b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q37" id="q37b2" value="1">
+                            <label class="btn btn-outline-light" for="q37b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q37" id="q37b3" value ="2">
+                            <label class="btn btn-outline-light" for="q37b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Adjustment with other relatives</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q38" id="q38b1" value="0">
+                            <label class="btn btn-outline-light" for="q38b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q38" id="q38b2" value="1">
+                            <label class="btn btn-outline-light" for="q38b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q38" id="q38b3" value ="2">
+                            <label class="btn btn-outline-light" for="q38b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Overcome Homesickness</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q39" id="q39b1" value="0">
+                            <label class="btn btn-outline-light" for="q39b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q39" id="q39b2" value="1">
+                            <label class="btn btn-outline-light" for="q39b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q39" id="q39b3" value ="2">
+                            <label class="btn btn-outline-light" for="q39b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Coping with Family disputes</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q40" id="q40b1" value="0">
+                            <label class="btn btn-outline-light" for="q40b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q40" id="q40b2" value="1">
+                            <label class="btn btn-outline-light" for="q40b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q40" id="q40b3" value ="2">
+                            <label class="btn btn-outline-light" for="q40b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Lack of Family support</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q41" id="q41b1" value="0">
+                            <label class="btn btn-outline-light" for="q41b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q41" id="q41b2" value="1">
+                            <label class="btn btn-outline-light" for="q41b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q41" id="q41b3" value ="2">
+                            <label class="btn btn-outline-light" for="q41b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Financial Problems</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q42" id="q42b1" value="0">
+                            <label class="btn btn-outline-light" for="q42b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q42" id="q42b2" value="1">
+                            <label class="btn btn-outline-light" for="q42b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q42" id="q42b3" value ="2">
+                            <label class="btn btn-outline-light" for="q42b3">Most Needed</label>
+                          </div>
+                    </div>
+
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Uncontrollable disturbing thoughts</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q43" id="q43b1" value="0">
+                            <label class="btn btn-outline-light" for="q43b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q43" id="q43b2" value="1">
+                            <label class="btn btn-outline-light" for="q43b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q43" id="q43b3" value ="2">
+                            <label class="btn btn-outline-light" for="q43b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Coping with Depression</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q44" id="q44b1" value="0">
+                            <label class="btn btn-outline-light" for="q44b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q44" id="q44b2" value="1">
+                            <label class="btn btn-outline-light" for="q44b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q44" id="q44b3" value ="2">
+                            <label class="btn btn-outline-light" for="q44b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Suicidal attempt/ suicidal thoughts (tick relevant option)</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q45" id="q45b1" value="0">
+                            <label class="btn btn-outline-light" for="q45b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q45" id="q45b2" value="1">
+                            <label class="btn btn-outline-light" for="q45b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q45" id="q45b3" value ="2">
+                            <label class="btn btn-outline-light" for="q45b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Phobias – Intense Fears</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q46" id="q46b1" value="0">
+                            <label class="btn btn-outline-light" for="q46b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q46" id="q46b2" value="1">
+                            <label class="btn btn-outline-light" for="q46b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q46" id="q46b3" value ="2">
+                            <label class="btn btn-outline-light" for="q46b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Health Problems</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q47" id="q47b1" value="0">
+                            <label class="btn btn-outline-light" for="q47b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q47" id="q47b2" value="1">
+                            <label class="btn btn-outline-light" for="q47b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q47" id="q47b3" value ="2">
+                            <label class="btn btn-outline-light" for="q47b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Bad Habits (Drugs/Alcohol/Smoking- tick relevant options)</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q48" id="q48b1" value="0">
+                            <label class="btn btn-outline-light" for="q48b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q48" id="q48b2" value="1">
+                            <label class="btn btn-outline-light" for="q48b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q48" id="q48b3" value ="2">
+                            <label class="btn btn-outline-light" for="q48b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Sleeplessness</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q49" id="q49b1" value="0">
+                            <label class="btn btn-outline-light" for="q49b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q49" id="q49b2" value="1">
+                            <label class="btn btn-outline-light" for="q49b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q49" id="q49b3" value ="2">
+                            <label class="btn btn-outline-light" for="q49b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Tiredness/weakness</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q50" id="q50b1" value="0">
+                            <label class="btn btn-outline-light" for="q50b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q50" id="q50b2" value="1">
+                            <label class="btn btn-outline-light" for="q50b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q50" id="q50b3" value ="2">
+                            <label class="btn btn-outline-light" for="q50b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Sleepy</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q51" id="q51b1" value="0">
+                            <label class="btn btn-outline-light" for="q51b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q51" id="q51b2" value="1">
+                            <label class="btn btn-outline-light" for="q51b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q51" id="q51b3" value ="2">
+                            <label class="btn btn-outline-light" for="q51b3">Most Needed</label>
+                          </div>
+                    </div>
+                    <div class="container"><br><br>
+                        <div><h4 style="position:center;">Nightmares – scary dreams</h4></div>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="q43" id="q52b1" value="0">
+                            <label class="btn btn-outline-light" for="q52b1">Not Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q52" id="q52b2" value="1">
+                            <label class="btn btn-outline-light" for="q52b2">Somewhat Needed</label>
+                          
+                            <input type="radio" class="btn-check" name="q52" id="q52b3" value ="2">
+                            <label class="btn btn-outline-light" for="q52b3">Most Needed</label>
+                          </div>
+                    </div>
+
+
+                    <div class="container" style="margin-left: 250px;">
+                        </br></br><button class='btn-light'type="submit">Submit</button>
+                    </div><br><br>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="container-sm>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>First</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>second</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Third</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div> -->
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Report</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+        <style>
+            
+            a:hover{
+                background-color:none;
+                text-decoration: none;
+                cursor:pointer;
+            }
+            .backimg{
+                background: rgba(0,0,0,0.5)url("/static/Images/reportBg.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: soft-light; 
+                opacity: 0.9;
+                position: relative;
+                isolation:isolate;
+            }
+            .backimg::after{
+                content:'';
+                position: absolute;
+                z-index:-1;
+                inset:0;
+                background: white;
+                opacity:.5;
+            }
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .logout{
+            color: black;
+            } 
+            /* .backimg::before{
+            content:"";
+            background-size:absolute;
+            
+            background-color:rgba(1, 1, 1, 0); 
+            }  */
+        </style>
+    </head>
+    <body class="backimg">
+        <div class="logout col-md-6">
+       <h3><a>Logo</a></h3>
+        </div>
+        <div class="logout col-md-6" style=" text-align:right">
+       <h3><a>Logout</a></h3>
+       </div>
+       <img src='/static/Images/bargraph.png' width="40%" height="70%">
+    </body>
+</html>
