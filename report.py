@@ -5,6 +5,7 @@ import re
 from flask import Flask, redirect,  url_for, render_template, request,flash, session
 from mainurls import *
 import sqlite3 as sql
+import os
 
 def gen(acad, adj, social, fam, health):
     # creating the dataset
@@ -19,8 +20,9 @@ def gen(acad, adj, social, fam, health):
     values = list(data.values())
     
     fig = plt.figure(figsize = (10, 5))
-    
+    dir_name = "./static/graph"
+    plt.rcParams["savefig.directory"] = os.chdir(os.path.dirname(dir_name))
     # creating the bar plot
     plt.bar(courses, values, color ='lightgreen',width = 0.4)
-    plt.savefig("bargraph.png",bbox_inches='tight')
+    fig.savefig("bargraph.png",bbox_inches='tight')
     return render_template('report.html')

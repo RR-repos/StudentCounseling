@@ -1,322 +1,279 @@
 <!DOCTYPE html>
-
 <html>
+	<head>
+		<title>Help</title>
 
-<head>
-	<title>Help</title>
-
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		.navbar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: sticky;
-            top: 0;
-            cursor: pointer;
-        }
-        
-		.background {
-			background: black;
-			background-blend-mode: darken;
-			background-size: cover;
-		}
-
-        .nav-list li {
-            list-style: none;
-            padding: 15px 15px;
-        }
- 
-        .nav-list li a {
-            text-decoration: none;
-            color: white;
-			margin-left: 5px;
-        }
- 
-        .nav-list li a:hover {
-            color: grey;
-        }
-		
-       
-
-		.firstsection {
-			background-color: #00FFDC;
-			height: 400px;
-		}
-
-		.secondsection {
-			background-color: white;
-			height: 400px;
-		}
-
-        .thirdsection {
-			background-color: #00FFDC;
-			height: 400px;
-		}
-
-        .fourthsection {
-			background-color: white;
-			height: 400px;
-		}
-
-        .fifthsection {
-			background-color: #00FFDC;
-			height: 400px;
-		}
-
-
-
-		.box-main {
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-			color: black;
-			max-width: 80%;
-			margin: auto;
-			height: 80%;
-		}
-
-		.firsthalf {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.navbar {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: sticky;
+				top: 0;
+				cursor: pointer;
+			}
 			
-		}
-		.rightnav {
-            width: 10%;
-			margin-top: 5px;
-			color: white;
-			width: 30%;
-			font-size:28px;
-			text-decoration:none;
-			margin-right: 50px;
-            text-align: right;
-			margin-left: 500px;
+			.background {
+				background: black;
+				background-blend-mode: darken;
+				background-size: cover;
+			}
 
-        }
-		
-		.rightnav a:hover{
-			color: grey;
-		}
-		
-
-		
-
-		.text-big {
-			font-family: 'Piazzolla', serif;
-			font-weight: bold;
-			font-size: 35px;
-		}
-
-		.text-small {
-			font-size: medium;
-		}
-		.logoutLblPos{
-
-			position:fixed;
-			right:10px;
-			top:5px;
-		 }
-
-		
-        .section {
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            max-width: 90%;
-            margin: auto;
-        }
-		
-
-		
-
-		.section-Left {
-			flex-direction: row-reverse;
-		}
-
-		.paras {
-			padding: 10px 65px;
-		}
-
-		ul li{
-			font-size:24px;
-		   }
-
-		
-
-		.center {
-			text-align: center;
-		}
-
-		.text-footer {
-			text-align: center;
-			padding: 30px 0;
-			font-family: 'Ubuntu', sans-serif;
-			display: flex;
-			justify-content: center;
-			color: white;
-		}
-	</style>
-</head>
-
-<body>
-    <nav class="navbar background">
-        <ul class="nav-list">
-            
-            <li><a class="nav-link" href="/home">BACK TO HOME</a></li>
-		</ul>
-		
-		<form align="right" name="form1" method="post" class="rightnav" >
+			.nav-list li {
+				list-style: none;
+				padding: 15px 15px;
+			}
+	
+			.nav-list li a {
+				text-decoration: none;
+				color: white;
+				margin-left: 5px;
+			}
+	
+			.nav-list li a:hover {
+				color: grey;
+			}
 			
+		
+
+			.firstsection {
+				background-color: #00FFDC;
+				height: 400px;
+			}
+
+			.secondsection {
+				background-color: white;
+				height: 400px;
+			}
+
+			.thirdsection {
+				background-color: #00FFDC;
+				height: 400px;
+			}
+
+			.fourthsection {
+				background-color: white;
+				height: 400px;
+			}
+
+			.fifthsection {
+				background-color: #00FFDC;
+				height: 400px;
+			}
+
+
+			.box-main {
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				color: black;
+				max-width: 80%;
+				margin: auto;
+				height: 80%;
+			}
+
+			.firsthalf {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
 				
-				<a class="rightnav" href="/logout">logout</a>
+			}
+			.rightnav {
+				width: 10%;
+				margin-top: 5px;
+				color: white;
+				width: 30%;
+				font-size:28px;
+				text-decoration:none;
+				margin-right: 50px;
+				text-align: right;
+				margin-left: 500px;
+
+			}
 			
-		</form>
+			.rightnav a:hover{
+				color: grey;
+			}
+			
+			.text-big {
+				font-family: 'Piazzolla', serif;
+				font-weight: bold;
+				font-size: 35px;
+			}
+
+			.text-small {
+				font-size: medium;
+			}
+			.logoutLblPos{
+
+				position:fixed;
+				right:10px;
+				top:5px;
+			}
+			
+			.section {
+				height: 400px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				max-width: 90%;
+				margin: auto;
+			}
+
+			.section-Left {
+				flex-direction: row-reverse;
+			}
+
+			.paras {
+				padding: 10px 65px;
+			}
+
+			ul li{
+				font-size:24px;
+			}
+
+			.center {
+				text-align: center;
+			}
+
+			.text-footer {
+				text-align: center;
+				padding: 30px 0;
+				font-family: 'Ubuntu', sans-serif;
+				display: flex;
+				justify-content: center;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar background">
+			<ul class="nav-list">
+				<li><a class="nav-link" href="/home">BACK TO HOME</a></li>
+			</ul>
+
+			<form align="right" name="form1" method="post" class="rightnav" >
+					<a class="rightnav" href="/logout">logout</a>
+			</form>
+		</nav>
 		
- 
-       
-    </nav>
-	
-	<section class="firstsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="web">Academic Needs</h1>
-				<p class="text-small">
-                    <ul>
-                        <li><a href="https://www.mindtools.com/pages/article/newHTE_90.htm" style="text-decoration:none">Setting Relevant Goals-Golden Rules</a></li>
-                        <li><a href="https://www.betterup.com/blog/how-to-set-goals-and-achieve-them" style="text-decoration:none">How to Achieve Goals</a></li>
-                        <li><a href="https://e-student.org/best-study-methods/" style="text-decoration:none">Effective study techniques according to learing types</a></li>
-                        <li><a href="https://www.oxfordlearning.com/how-to-study-effectively/" style="text-decoration:none">How to Study Effetively</a></li>
-                        <li><a href="https://learningcenter.unc.edu/tips-and-tools/enhancing-your-memory/" style="text-decoration:none">Effective memorization techniques</a></li>
-                        <li><a href="https://www2.hse.ie/mental-health/life-situations-events/exam-stress/" style="text-decoration:none">Academic and exam stress management</a></li>
-                        <li><a href="https://www.forbes.com/sites/jennagoudreau/2013/03/20/12-ways-to-eliminate-stress-at-work/?sh=2c3813707f29" style="text-decoration:none">Eliminating Work Stress</a></li>
-                        <li><a href="https://www.betterup.com/blog/15-ways-to-improve-your-focus-and-concentration-skills" style="text-decoration:none">Attention and Concentration tips</a></li>
-
-                    </ul>
-					
-                   
-
-				</p>
-                
-
-
+		<section class="firstsection">
+			<div class="box-main">
+				<div class="firstHalf">
+					<h1 class="text-big" id="web">Academic Needs</h1>
+					<p class="text-small">
+						<ul>
+							<li><a href="https://www.mindtools.com/pages/article/newHTE_90.htm" style="text-decoration:none">Setting Relevant Goals-Golden Rules</a></li>
+							<li><a href="https://www.betterup.com/blog/how-to-set-goals-and-achieve-them" style="text-decoration:none">How to Achieve Goals</a></li>
+							<li><a href="https://e-student.org/best-study-methods/" style="text-decoration:none">Effective study techniques according to learing types</a></li>
+							<li><a href="https://www.oxfordlearning.com/how-to-study-effectively/" style="text-decoration:none">How to Study Effetively</a></li>
+							<li><a href="https://learningcenter.unc.edu/tips-and-tools/enhancing-your-memory/" style="text-decoration:none">Effective memorization techniques</a></li>
+							<li><a href="https://www2.hse.ie/mental-health/life-situations-events/exam-stress/" style="text-decoration:none">Academic and exam stress management</a></li>
+							<li><a href="https://www.forbes.com/sites/jennagoudreau/2013/03/20/12-ways-to-eliminate-stress-at-work/?sh=2c3813707f29" style="text-decoration:none">Eliminating Work Stress</a></li>
+							<li><a href="https://www.betterup.com/blog/15-ways-to-improve-your-focus-and-concentration-skills" style="text-decoration:none">Attention and Concentration tips</a></li>
+						</ul>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="secondsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="program">
-					Personality/Adjustments Needs
-				</h1>
-                <p class="text-small"></p>
-				    <ul>
-                        <li><a href="https://www.verywellmind.com/how-to-boost-your-self-confidence-4163098" style="text-decoration:none">Build self confidence</a></li>
-                        <li><a href="https://www.verywellmind.com/anger-management-strategies-4178870" style="text-decoration:none">Anger management</a></li>
-                        <li><a href="https://www.choosingtherapy.com/fear-of-failure/" style="text-decoration:none">Overcoming Fear of Failure</a></li>
-                        <li><a href="https://blog.hubspot.com/sales/self-discipline" style="text-decoration:none">Increase self self-discipline</a></li>
-                        <li><a href="https://www.americanexpress.com/en-us/business/trends-and-insights/articles/8-easy-ways-to-increase-your-self-control/" style="text-decoration:none">Increase Self Confidence</a></li>
-                        <li><a href="https://professional.dce.harvard.edu/blog/eight-things-you-can-do-to-improve-your-communication-skills/" style="text-decoration:none">Improve comunication skills</a></li>
-                        <li><a href="https://www.betterup.com/blog/finding-purpose#:~:text=Finding%20your%20purpose%20in%20life,can%20help%20you%20live%20longer." style="text-decoration:none">Finding meaning in life</a></li>
-                        <li><a href="https://www.topuniversities.com/blog/7-unusual-ways-improve-your-decision-making-skills" style="text-decoration:none">Tips for Decision Making Skills</a></li>
+		<section class="secondsection">
+			<div class="box-main">
+				<div class="firstHalf">
+					<h1 class="text-big" id="program">
+						Personality/Adjustments Needs
+					</h1>
+					<p class="text-small"></p>
+						<ul>
+							<li><a href="https://www.verywellmind.com/how-to-boost-your-self-confidence-4163098" style="text-decoration:none">Build self confidence</a></li>
+							<li><a href="https://www.verywellmind.com/anger-management-strategies-4178870" style="text-decoration:none">Anger management</a></li>
+							<li><a href="https://www.choosingtherapy.com/fear-of-failure/" style="text-decoration:none">Overcoming Fear of Failure</a></li>
+							<li><a href="https://blog.hubspot.com/sales/self-discipline" style="text-decoration:none">Increase self self-discipline</a></li>
+							<li><a href="https://www.americanexpress.com/en-us/business/trends-and-insights/articles/8-easy-ways-to-increase-your-self-control/" style="text-decoration:none">Increase Self Confidence</a></li>
+							<li><a href="https://professional.dce.harvard.edu/blog/eight-things-you-can-do-to-improve-your-communication-skills/" style="text-decoration:none">Improve comunication skills</a></li>
+							<li><a href="https://www.betterup.com/blog/finding-purpose#:~:text=Finding%20your%20purpose%20in%20life,can%20help%20you%20live%20longer." style="text-decoration:none">Finding meaning in life</a></li>
+							<li><a href="https://www.topuniversities.com/blog/7-unusual-ways-improve-your-decision-making-skills" style="text-decoration:none">Tips for Decision Making Skills</a></li>
 
-                    </ul>
-                </p>
-                
-
-
+						</ul>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-    <section class="thirdsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="web">Social Needs</h1>
-				<p class="text-small">
-					<ul>
-                        <li><a href="https://www.elegantthemes.com/blog/business/how-to-say-no" style="text-decoration:none">How to say NO</a></li>
-                        <li><a href="https://www.mindful.org/how-to-be-more-compassionate-a-mindful-guide-to-compassion/" style="text-decoration:none">How to be more compassionate</a></li>
-                        <li><a href="https://blog.hubspot.com/service/conflict-management-styles" style="text-decoration:none">Conflict Managament</a></li>
-                        <li><a href="https://www.helpguide.org/articles/relationships-communication/dealing-with-loneliness-and-shyness.htm#:~:text=Instead%20of%20worrying%20about%20how,to%20put%20things%20in%20perspective." style="text-decoration:none">Dealing with Shyness</a></li>
-                        <li><a href="https://www.psychologytoday.com/us/blog/click-here-happiness/201902/feeling-lonely-discover-18-ways-overcome-loneliness" style="text-decoration:none">Overcome Loneliness</a></li>
-                        <li><a href="https://livingwithlimerence.com/how-to-get-over-infatuation/" style="text-decoration:none">overcome infatuation</a></li>
-                        <li><a href="https://caps.ucsc.edu/counseling/aod/peer-pressure.html" style="text-decoration:none">Handling peer pressure</a></li>
-                        <li><a href="https://www.lifehack.org/articles/lifestyle/how-get-along-better-with-your-parents-2.html" style="text-decoration:none">Build stronger relationships with parents</a></li>
-                        <li><a href="https://www.minimalismmadesimple.com/home/respect-yourself/" style="text-decoration:none">Self Respect</a></li>
-                        <li><a href="https://www.verywellmind.com/how-to-heal-a-broken-heart-1065395" style="text-decoration:none">Heal from a Broken Heart</a></li>
+		<section class="thirdsection">
+			<div class="box-main">
+				<div class="firstHalf">
+					<h1 class="text-big" id="web">Social Needs</h1>
+					<p class="text-small">
+						<ul>
+							<li><a href="https://www.elegantthemes.com/blog/business/how-to-say-no" style="text-decoration:none">How to say NO</a></li>
+							<li><a href="https://www.mindful.org/how-to-be-more-compassionate-a-mindful-guide-to-compassion/" style="text-decoration:none">How to be more compassionate</a></li>
+							<li><a href="https://blog.hubspot.com/service/conflict-management-styles" style="text-decoration:none">Conflict Managament</a></li>
+							<li><a href="https://www.helpguide.org/articles/relationships-communication/dealing-with-loneliness-and-shyness.htm#:~:text=Instead%20of%20worrying%20about%20how,to%20put%20things%20in%20perspective." style="text-decoration:none">Dealing with Shyness</a></li>
+							<li><a href="https://www.psychologytoday.com/us/blog/click-here-happiness/201902/feeling-lonely-discover-18-ways-overcome-loneliness" style="text-decoration:none">Overcome Loneliness</a></li>
+							<li><a href="https://livingwithlimerence.com/how-to-get-over-infatuation/" style="text-decoration:none">overcome infatuation</a></li>
+							<li><a href="https://caps.ucsc.edu/counseling/aod/peer-pressure.html" style="text-decoration:none">Handling peer pressure</a></li>
+							<li><a href="https://www.lifehack.org/articles/lifestyle/how-get-along-better-with-your-parents-2.html" style="text-decoration:none">Build stronger relationships with parents</a></li>
+							<li><a href="https://www.minimalismmadesimple.com/home/respect-yourself/" style="text-decoration:none">Self Respect</a></li>
+							<li><a href="https://www.verywellmind.com/how-to-heal-a-broken-heart-1065395" style="text-decoration:none">Heal from a Broken Heart</a></li>
 
-                    </ul>
-				</p>
-                
-
-
+						</ul>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-    <section class="fourthsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="web">Family Needs</h1>
-				<p class="text-small">
-					<ul>
-                        <li><a href="https://www.betterhealth.vic.gov.au/health/healthyliving/family-conflict" style="text-decoration:none">Dealing with family conflict </a></li>
-                        <li><a href="https://caps.ku.edu/homesickness" style="text-decoration:none">coping with homesickness</a></li>
-                        <li><a href="https://www.lifehack.org/articles/communication/10-things-you-can-you-feel-lack-support.html" style="text-decoration:none">Deal with lack of support</a></li>
-                        <li><a href="https://students.ubc.ca/ubclife/21-money-saving-tips-tricks" style="text-decoration:none">Finance Management</a></li>
-
-                    </ul>
-
-				</p>
-                
-
+		<section class="fourthsection">
+			<div class="box-main">
+				<div class="firstHalf">
+					<h1 class="text-big" id="web">Family Needs</h1>
+					<p class="text-small">
+						<ul>
+							<li><a href="https://www.betterhealth.vic.gov.au/health/healthyliving/family-conflict" style="text-decoration:none">Dealing with family conflict </a></li>
+							<li><a href="https://caps.ku.edu/homesickness" style="text-decoration:none">coping with homesickness</a></li>
+							<li><a href="https://www.lifehack.org/articles/communication/10-things-you-can-you-feel-lack-support.html" style="text-decoration:none">Deal with lack of support</a></li>
+							<li><a href="https://students.ubc.ca/ubclife/21-money-saving-tips-tricks" style="text-decoration:none">Finance Management</a></li>
+						</ul>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-    <section class="fifthsection">
-		<div class="box-main">
-			<div class="firstHalf">
-				<h1 class="text-big" id="web">Clinical Needs</h1>
-				<p class="text-small">
-					<ul>
-                        <li><a href="https://jamesclear.com/how-to-break-a-bad-habit" style="text-decoration:none">Breaking bad habits </a></li>
-                        <li><a href="https://www.apa.org/gradpsych/2009/09/bad-habits" style="text-decoration:none">Tips to break bad habits</a></li>
-                        <li><a href="https://www.gold.ac.uk/students/wellbeing/guides/insomnia/" style="text-decoration:none">How to sleep better</a></li>
-                        <li><a href="https://www.healthline.com/nutrition/10-reasons-you-are-tired" style="text-decoration:none">Oversleeping tips</a></li>
-                        <li><a href="https://www.bestcolleges.com/blog/mental-physical-health-college/" style="text-decoration:none">Maintaining health for students</a></li>
-                        <li><a href="https://www.heretohelp.bc.ca/infosheet/how-to-cope-with-nightmares" style="text-decoration:none">coping with nightmares</a></li>
-                        <li><a href="https://www.verywellmind.com/tips-for-coping-with-suicidal-thoughts-1067530" style="text-decoration:none">Coping with depression and thoughts</a></li>
-                        <li><a href="https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/" style="text-decoration:none">Overcome tiredness and weakness</a></li>
+		<section class="fifthsection">
+			<div class="box-main">
+				<div class="firstHalf">
+					<h1 class="text-big" id="web">Clinical Needs</h1>
+					<p class="text-small">
+						<ul>
+							<li><a href="https://jamesclear.com/how-to-break-a-bad-habit" style="text-decoration:none">Breaking bad habits </a></li>
+							<li><a href="https://www.apa.org/gradpsych/2009/09/bad-habits" style="text-decoration:none">Tips to break bad habits</a></li>
+							<li><a href="https://www.gold.ac.uk/students/wellbeing/guides/insomnia/" style="text-decoration:none">How to sleep better</a></li>
+							<li><a href="https://www.healthline.com/nutrition/10-reasons-you-are-tired" style="text-decoration:none">Oversleeping tips</a></li>
+							<li><a href="https://www.bestcolleges.com/blog/mental-physical-health-college/" style="text-decoration:none">Maintaining health for students</a></li>
+							<li><a href="https://www.heretohelp.bc.ca/infosheet/how-to-cope-with-nightmares" style="text-decoration:none">coping with nightmares</a></li>
+							<li><a href="https://www.verywellmind.com/tips-for-coping-with-suicidal-thoughts-1067530" style="text-decoration:none">Coping with depression and thoughts</a></li>
+							<li><a href="https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/" style="text-decoration:none">Overcome tiredness and weakness</a></li>
 
-                    </ul>
-
-				</p>
-                
-
-
+						</ul>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
 
 
-	
+		
 
 
-	<footer class="background">
-		<p class="text-footer">
-			Student Counselling Needs
-		</p>
-
-
-	</footer>
-</body>
-
+		<footer class="background">
+			<p class="text-footer">
+				Student Counselling Needs
+			</p>
+		</footer>
+	</body>
 </html>

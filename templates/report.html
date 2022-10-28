@@ -18,10 +18,11 @@
                 background: rgba(0,0,0,0.5)url("/static/Images/reportBg.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-blend-mode: soft-light; 
-                opacity: 0.9;
+                /* background-blend-mode: soft-light;  */
+                opacity: 0.8;
                 position: relative;
                 isolation:isolate;
+                min-height: 100vh;
             }
             .backimg::after{
                 content:'';
@@ -35,6 +36,7 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                background-size: cover;
             }
             .logout{
             color: black;
@@ -47,13 +49,13 @@
             }  */
         </style>
     </head>
-    <body class="backimg">
-        <div class="logout col-md-6">
-       <h3><a>Logo</a></h3>
-        </div>
-        <div class="logout col-md-6" style=" text-align:right">
-       <h3><a>Logout</a></h3>
-       </div>
-       <img src='D:\20jg1a4212\3-1\miniproj\githubRepo\StudentCounseling\bargraph.png' width="40%" height="70%">
+    <body class="backimg"><br><br>
+        <!-- <div class="logout col-md-6">
+            <h3>Logo</h3>
+        </div> -->
+        <div class="container" style=" text-align:right">
+            <a class='logout' href='/logout' style="text-decoration:none">Logout</a>
+       </div><br>
+       <img src='/static/bargraph.png' width="60%" height="100%"><br><br>
     </body>
 </html>
